@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.hutu.lsz.mybatis.mapper.UserMapper">
+
+<!--    Mapper接口和XML映射文件要保证两个一致-->
+<!--    1、Mapper接口的全类名和XML映射文件的namespace一致-->
+<!--    2、Mapper接口中的方法的方法名要和XML映射文件中的SQL的id保持一致-->
+
+<!--    int insertUser();-->
+    <insert id="insertUser">
+        insert into mybatis_user values (null, "tll", "19980624", 24, "女", "13579@qq.com")
+    </insert>
+</mapper>
